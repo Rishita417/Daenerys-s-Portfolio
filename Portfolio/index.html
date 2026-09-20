@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daenerys Targaryen | Portfolio</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="splash-screen">
+        <div class="splash-content">
+            <h1 class="targaryen-title">DAENERYSTARGARYEN</h1>
+            <p class="splash-subtitle">First of Her Name,the unburnt, Queen of the Andals and the First Men,Protector of the seven Kingdoms,the Breaker of Chains,and Mother of dragons.</p>
+            <div class="splash-buttons">
+                <button id="bend-knee-btn" class="btn primary-btn">Bend The Knee</button>
+                <button id="refuse-btn" class="btn secondary-btn">Refuse</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- If you Refuse-->
+    <div id="dracarys-overlay">
+        <h1>DRACARYS!</h1>
+    </div>
+
+    <!-- BACKGROUND EMBER CONTAINER -->
+    <div id="ember-container"></div>
+
+    <!-- MAIN PORTFOLIO CONTENT (HIDDEN UNTIL BEND THE KNEE IS CLICKED) -->
+    <main id="main-portfolio" class="hidden">
+        
+        <!-- hero section-->
+        <header class="hero">
+            <h2 class="sub-header">The Claim</h2>
+            <h1 class="main-name">Daenerys Stormborn</h1>
+            <p class="bio">I am Daenerys Targaryen , and I have come to reclaim my birthright, shatter the wheels of your elite,and liberate this world-even if i must burn it down to save it
+            </p>
+        </header>
+        <!-- THE CHRONICLE OF THE DRAGON QUEEN -->
+<section class="story-chronicle-section">
+    <h2 class="section-title">The Conquest Timeline</h2>
+    <p class="instruction">Select each option to view the chronicle of my evolution...</p>
+
+    <!-- Interactive Navigation Tabs -->
+    <div class="timeline-tabs">
+        <button class="tab-btn active">
+            <a href="the_Exile.html">I.The Exile</a>
+        </button>
+        <button class="tab-btn">
+            <a href="the_Awakening.html">I.The Awakening</a>
+        </button>
+        <button class="tab-btn"> 
+            <a href="the_Breaker.html">I.The Breaker </a>
+        </button>
+         <button class="tab-btn">
+        <a href="TheEnd.html">The End</a>
+    </button>
+    </div>
+
+    <!-- Dynamic Story Board Display -->
+    <div class="story-display-box">
+        <div id="story-display-content">
+            <!-- Default Content Loaded via JS -->
+    
+            <div class="story-divider"></div>
+            
+        </div>
+    </div>
+</section>
+
+        <!-- 3. INTERACTIVE PROJECTS SECTION -->
+        <section class="projects-section">
+            <h2 class="section-title">Conquered Cities (Projects)</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Astapor</h3>
+                    <p class="project-desc">In Astapor, I tricked the masters to win command of 8,000 Unsullied. With a single word—'Dracarys'—I burned their empire and liberated an entire city from chains.".</p>
+        
+                </div>
+                <div class="project-card">
+                    <h3>Yunkai</h3>
+                    <p class="project-desc">I conquered Meereen by weaponizing the broken chains of the liberated, crucifying the masters who dared defy me, and taking my seat atop the Great Pyramid as their undisputed Queen."
+                </div>
+                <div class="project-card">
+                    <h3>Meereen</h3>
+                    <p class="project-desc">
+                        I broke Yunkai without swinging a sword, turning their own sellswords to my side and emerging from the gates as 'Mhysa'—lifted toward the sky on a sea of the liberated."
+                </div>
+            </div>
+        </section>
+          
+         <!-- INTERACTIVE DRAGON SKILLS SECTION -->
+        <section class="skills-section">
+            <h2 class="section-title">The Three Dragons (Tech Stack)</h2>
+            <p class="instruction">Click a dragon egg to summon its power...</p>
+            
+            <div class="eggs-grid">
+                <!-- DROGON -->
+                <div class="egg-card" data-dragon="drogon">
+                    <div class="egg-graphic black-egg">🐉</div>
+                    <h3>Drogon</h3>
+                    <p class="egg-status">Click to Hatch</p>
+                    <div class="dragon-skills hidden-skills">
+                        <h4>Backend & Logic</h4>
+                        <ul>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Node.js / Express</li>
+                            <li>Python / Django</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RHAEGAL -->
+                <div class="egg-card" data-dragon="rhaegal">
+                    <div class="egg-graphic green-egg">🐉</div>
+                    <h3>Rhaegal</h3>
+                    <p class="egg-status">Click to Hatch</p>
+                    <div class="dragon-skills hidden-skills">
+                        <h4>Frontend Frameworks</h4>
+                        <ul>
+                            <li>React.js</li>
+                            <li>Next.js</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- VISERION -->
+                <div class="egg-card" data-dragon="viserion">
+                    <div class="egg-graphic gold-egg">🐉</div>
+                    <h3>Viserion</h3>
+                    <p class="egg-status">Click to Hatch</p>
+                    <div class="dragon-skills hidden-skills">
+                        <h4>Core Infrastructure</h4>
+                        <ul>
+                            <li>HTML5 Semantics</li>
+                            <li>CSS3 Architecture</li>
+                            <li>Git / Deployment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT SECTION -->
+        <footer class="contact-section">
+            <h2>Send a Raven</h2>
+            <p>Offer your allegiance or discuss global trade routes.</p>
+            <button class="btn primary-btn" onclick="alert('Raven deployed!')">Send Message</button>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
